@@ -16,7 +16,7 @@ const List = () => {
    }
 
    return (
-      <div className="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-4">
+      <div className="container col">
          {
             tarefas.map((tarefa, index) => (
                <Card data={tarefa} key={index} />

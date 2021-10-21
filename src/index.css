@@ -1,3 +1,7 @@
+html{
+  height: 100%;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -6,12 +10,18 @@
 
 }
 
+.root {
+  height: 100%;
+}
+
 body{
   display: flex;
   justify-content: center;
   min-height: 100vh;
   background: #e5e5e6;
   flex-wrap: wrap;
+  height: 100%;
+
 }
 
 header{
@@ -175,9 +185,9 @@ main{
   margin: 30px;
   box-shadow: 7px 7px 12px rgb(27, 43, 88,0.5);
   border-radius: 15px;
-  background: rgba(167, 33, 33, 0.897);
+  background: rgb(57, 91, 184);
   overflow: hidden;
-  display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   border-top: 1px solid rgba(255,255,255,0.5);
@@ -239,6 +249,7 @@ main{
   margin-top: -80px;
   top: -80px;
   right: 30px;
+  text-decoration: none;
   font-size: 8em;
   color: rgba(255, 255, 255, 0.25);
   pointer-events: none;

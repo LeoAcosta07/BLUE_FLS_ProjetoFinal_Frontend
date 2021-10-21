@@ -11,16 +11,15 @@ const Card = (props) => {
    
    return (
       <Link to={`/tarefa/${tarefa._id}`} className="col">
-         <div className="card hover-shadow">
-            <div className="card-body">
-               <h5 className="card-title">{tarefa.titulo}</h5>
-               <p className="card-text">{resumo}</p>
-               <span className="badge bg-primary">Prioridade: {tarefa.prioridade}</span>
-               <span className="badge bg-light text-dark mx-3">Status: {tarefa.status}</span>
-               <span className="badge bg-light text-dark mx-1">Prazo: {tarefa.prazo}</span>
-
-            </div>
-         </div>
+    <div className="card">
+    <h2 style={{color:"#FFFF"}}>{tarefa.titulo}</h2>
+        <div className="content">
+            <h3>{tarefa.titulo}</h3>
+            <p>{tarefa.prioridade}</p>
+            <p>{tarefa.status}</p>
+            <p>{tarefa.prazo}</p>
+        </div>
+    </div>
       </Link>
 
    )
